@@ -1,0 +1,16 @@
+---
+# A list of OpenGraph data providers.
+
+- 
+  name: IMDB
+  how: opengraph
+  type: link
+  url_schemes:
+    - http://*.imdb.com/title/*
+    - https://*.imdb.com/title/*
+  example_urls:
+    - http://www.imdb.com/title/tt1155076/
+  fields:
+    - title
+    - image
+    - description

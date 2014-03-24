@@ -1,0 +1,17 @@
+---
+# A list of providers for which we will scrape data using Nokogiri.
+
+- 
+  name: GoodReads
+  how: scrape
+  type: link
+  url_schemes:
+    - http://www.goodreads.com/book/show/*
+    - https://www.goodreads.com/book/show/*
+  example_urls:
+    - https://www.goodreads.com/book/show/1141797.The_Pancatantra
+  fields:
+    - title: //*[@id="bookTitle"]/text()
+    - thumbnail_url: //*[@id="coverImage"]/@src
+    - author_name: //*[@id="bookAuthors"]/span[*]/a[1]/span
+    - description: //*[@id="description"]

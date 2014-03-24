@@ -1,0 +1,15 @@
+---
+# A list of oEmbed data providers.
+
+- 
+  name: YouTube
+  how: oembed
+  type: video
+  url_schemes:
+    - http://*.youtube.com/*
+    - https://*.youtube.com/*
+    - http://*.youtu.be/*
+    - https://*.youtu.be/*
+  example_urls:
+    - http://www.imdb.com/title/tt1155076/
+  endpoint: http://www.youtube.com/oembed
